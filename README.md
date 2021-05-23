@@ -8,5 +8,4 @@ This GitHub repository is designed to solve the Unity ML-Agents Reacher Environm
 
 ## The environment
 ![Unity ML-Agents Reacher Environment](Reacher.gif)
-
-Unity ML-Agents Reacher Environment
+*Unity ML-Agents Reacher Environment*
