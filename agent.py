@@ -17,8 +17,8 @@ TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-3         # learning rate of the actor 
 LR_CRITIC = 1e-3        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
-LEARN_EVERY = 20        # intervall learning
-NUMBER_LEARNING = 10    # Number of Batches to learn from in one step
+LEARN_EVERY = 1        # intervall learning
+NUMBER_LEARNING = 1    # Number of Batches to learn from in one step
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
