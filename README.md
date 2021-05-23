@@ -23,7 +23,7 @@ There are two options to solve the episodic task in the Unity ML-Agents Reacher 
 
 #### Option 1
 
-Environment 1: One agent. The agent have to get an average score of +30 over 100 consecutive episodes.
+Environment 1: One agent. The agent has to get an average score of +30 over 100 consecutive episodes.
 
 #### Option 2
 
