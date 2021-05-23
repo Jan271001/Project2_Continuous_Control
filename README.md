@@ -7,5 +7,5 @@ Note: This repository is created for Linux ubuntu 21.04. It's only guaranteed to
 This GitHub repository is designed to solve the Unity ML-Agents Reacher Environment.
 
 ## The environment
-![Unity ML-Agents Reacher Environment](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Unity ML-Agents Reacher Environment](https://github.com/Jan271001/Project2_Continuous_Control/edit/main/Reacher.gif)
 Unity ML-Agents Reacher Environment
