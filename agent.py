@@ -17,8 +17,8 @@ TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-3         # learning rate of the actor 
 LR_CRITIC = 1e-3        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
-LEARN_EVERY = 1        # intervall learning
-NUMBER_LEARNING = 1    # Number of Batches to learn from in one step
+LEARN_EVERY = 20        # intervall learning
+NUMBER_LEARNING = 10    # Number of Batches to learn from in one step
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -33,6 +33,8 @@ class Agent():
             state_size (int): dimension of each state
             action_size (int): dimension of each action
             random_seed (int): random seed
+            epsilon (float): noise factor
+            epsilon_dec (float): noise decay
         """
         self.state_size = state_size
         self.action_size = action_size
@@ -76,7 +78,6 @@ class Agent():
         self.actor_local.train()
         if add_noise:
             action += self.epsilon * self.noise.sample()
-        #action = (action + 1.0) / 2.0
         return np.clip(action, -1, 1)
 
 
@@ -127,7 +128,7 @@ class Agent():
         
         # ------------------------update noise---------------------------------- #
         self.epsilon = self.epsilon*self.epsilon_dec
-        self.reset()
+        self.noise.reset()
 
     def soft_update(self, local_model, target_model, tau):
         """Soft update model parameters.
