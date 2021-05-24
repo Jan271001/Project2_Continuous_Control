@@ -23,7 +23,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 class Agent():
     """Interacts with and learns from the environment."""
     
-    def __init__(self, state_size, action_size, random_seed=0, noise=1.0, noise_dec=0.995):
+    def __init__(self, state_size, action_size, random_seed=0, noise_factor=1.0, noise_dec=0.995):
         """Initialize an Agent object.
         
         Params
@@ -37,7 +37,7 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(random_seed)
-        self.noise = noise
+        self.noise_factor = noise_factor
         self.noise_dec = noise_dec
 
         # Actor Network (w/ Target Network)
@@ -75,7 +75,7 @@ class Agent():
             action = self.actor_local(state).cpu().data.numpy()
         self.actor_local.train()
         if add_noise:
-            action += self.noise * self.noise.sample()
+            action += self.noise_factor * self.noise.sample()
         return np.clip(action, -1, 1)
 
 
@@ -125,7 +125,7 @@ class Agent():
         self.soft_update(self.actor_local, self.actor_target, TAU)
         
         # ------------------------update noise---------------------------------- #
-        self.noise = self.noise*self.noise_dec
+        self.noise_factor = self.noise_factor*self.noise_dec
         self.noise.reset()
 
     def soft_update(self, local_model, target_model, tau):
