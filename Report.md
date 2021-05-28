@@ -15,8 +15,13 @@ For this project I used the DDPG-Algorithm (Deep Deterministic Policy Gradient).
 ### Hyperparameters
 
 Learning Rate (Actor):   0.0001
+
 Learning Rate (Critic):  0.0001
+
 Discount Rate:           0.99
+
 Noise Decay:             0.995
+
 Softupdate Rate:         0.001
+
 Random Seed:             0
