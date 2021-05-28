@@ -32,3 +32,11 @@ Random Seed:             0
 In pseudocode the DDPG-Algorithm looks like following:
 
 ![Pseudo-Code-DDPG](Pseudo_Code_DDPG.png)
+
+## Annotation
+
+As an little annotation I wanted to mention, that in my opinion the impact of the learning rate is absolutly impressive. At first I had struggle getting the agent to learn. I tried both versions of the environment, the one with one agent and the one with 20 agents. The second one works best for me. At first I tried a learning rate of 0.001 for both actor and critic networks. The agent seems to learn, but after he reaches an average score of nearly 29 the average droped very slowly and doesen't increase anymore. After a little more research I decided to let him train longer. In order to do so I changed the learning rate to 0.0001 and started training. The result was crazy. After only 12 episodes it gets his first score over 30 and the over all result was much more than I have ever expected. Here I realy learned how important little changes in hyperparemeters could be.
+
+## Future Ideas
+
+Although the result with this algorithm is in my opinion not bad, there are a few more things I like to try. At first I want to know what the maximum for this Code is. So I like to adjust the hyperparameters and give it some mor trys. Additionaly I like to use other aproaches like for example the A2C or D4PG algorithms, which are also suited for problems with continuous action and state spaces.  
