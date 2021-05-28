@@ -39,4 +39,4 @@ As a little annotation I wanted to mention, that in my opinion the impact of the
 
 ## Future Ideas
 
-Although the result with this algorithm is in my opinion not bad, there are a few more things I like to try. At first I want to know what the maximum for this Code is. So I like to adjust the hyperparameters and give it some mor trys. Additionaly I like to use other aproaches like for example the A2C or D4PG algorithms, which are also suited for problems with continuous action and state spaces.  
+Although the result with this algorithm is in my opinion not bad, there are a few more things I like to try. At first I want to know what the maximum for this Code is. So I like to adjust the hyperparameters and give it some more trys. Additionaly I like to use other aproaches like for example the A2C or D4PG algorithms, which are also suited for problems with continuous action and state spaces.  
