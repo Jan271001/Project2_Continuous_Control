@@ -15,7 +15,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ### Variations
 
-This environment comes in two seperate variations. One with **1 Agent** and the other with **20 Agents** included. In order to fulfil this commission only one of them has to be solved.  
+This environment comes in two seperate variations. Including **1 Agent** and **20 Agents**. In order to fulfil this commission only one of them has to be solved.  
 
 ### Solving the environment
 
@@ -27,4 +27,4 @@ Environment 1: One agent. The agent has to get an average score of +30 over 100 
 
 #### Option 2
 
-Environment 2: Twenty agents.
+Environment 2: Twenty agents. The average score over all 20 agents has to be +30 over 100 consecutive episodes.
