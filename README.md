@@ -15,7 +15,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ### Variations
 
-This environment comes in two seperate variations. Including **1 Agent** and **20 Agents**. In order to fulfil this commission only one of them has to be solved. Both of them are allready placed in the *Environment_1_Agent* and *Environment_20_Agents* folders in this repository.  
+This environment comes in two seperate variations, including **1 Agent** and **20 Agents**. In order to fulfil this commission only one of them has to be solved. Both of them are allready placed in the *Environment_1_Agent* and *Environment_20_Agents* folders in this repository.  
 
 ### Solving the environment
 
