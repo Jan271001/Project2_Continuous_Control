@@ -29,7 +29,9 @@ Environment 1: One agent. The agent has to get an average score of +30 over 100 
 
 Environment 2: Twenty agents. The average score over all 20 agents has to be +30 over 100 consecutive episodes.
 
-In this repository an solution for option 2 of the environment is published. The trained networks after this can also be used to watch only one agent perform.
+In this repository an solution for option 2 of the environment is published. 
+
+**Annotation:** The agent is trained with twenty copys of himself, nevertheless his networks can be used to perform in option 1 of the environment.
 
 ## Getting started
 
