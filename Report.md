@@ -25,3 +25,5 @@ Noise Decay:             0.995
 Softupdate Rate:         0.001
 
 Random Seed:             0
+
+### Pseudo-Code
