@@ -28,3 +28,17 @@ Environment 1: One agent. The agent has to get an average score of +30 over 100 
 #### Option 2
 
 Environment 2: Twenty agents. The average score over all 20 agents has to be +30 over 100 consecutive episodes.
+
+In this repository an solution for option 2 of the environment is published.
+
+## Getting started
+
+Before running the code in the jupyter-notebook make sure to install the necessary libraries. If you'd like to install them on your own machine please follow the instructions below. These instructions imply that your machine already satisfy conditions to run all, not explicitly for this project necessary, requirements like for example jupyter notebooks or python3-code.
+
+To use this repositotry on your own machine please set up a python-environment. In order to do so please follow the instructions in this repository: https://github.com/udacity/deep-reinforcement-learning#dependencies. 
+
+## Use the Code
+
+In order to use the code in this repository make sure your machine satisfy  all requirements in the "Getting started"- paragraph above. Now you are free to clone this repository and use it on your own computer(!No GPU-support needed!). After cloning, you have to open a terminal and navigate to the folder representing the repository these folder should be placed in your python-environment. Please open a jupyter notebook using the *jupyter notebook* command. The Notebook will open in your browser. Thereafter you have to open the *Continuous_Control_Training.ipynd*-file and restart the kernel by clicking on the "restart"-button. A dialogue will open, please click on the "restart and run all cells"-button. Finally the agents train. if you like to whach them while training please change the  If you prefer watching an already trained agent, please open the *Navigation_Trained_Agent_Test.ipynd*-file.
+
+**For additional information please read the "Report.md"-file**
