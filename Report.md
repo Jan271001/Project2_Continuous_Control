@@ -30,3 +30,5 @@ Random Seed:             0
 ### Pseudo-Code
 
 In pseudocode the DDPG-Algorithm looks like following:
+
+![Pseudo-Code-DDPG](Pseudo_Code_DDPG.png)
