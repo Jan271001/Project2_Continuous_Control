@@ -15,7 +15,7 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ### Variations
 
-This environment comes in two seperate variations. Including **1 Agent** and **20 Agents**. In order to fulfil this commission only one of them has to be solved.  
+This environment comes in two seperate variations. Including **1 Agent** and **20 Agents**. In order to fulfil this commission only one of them has to be solved. Both of them are allready placed in the *Environment_1_Agent* and *Environment_20_Agents* folders in this repository.  
 
 ### Solving the environment
 
@@ -29,7 +29,7 @@ Environment 1: One agent. The agent has to get an average score of +30 over 100 
 
 Environment 2: Twenty agents. The average score over all 20 agents has to be +30 over 100 consecutive episodes.
 
-In this repository an solution for option 2 of the environment is published.
+In this repository an solution for option 2 of the environment is published. The trained networks after this can also be used to watch only one agent perform.
 
 ## Getting started
 
@@ -39,6 +39,6 @@ To use this repositotry on your own machine please set up a python-environment. 
 
 ## Use the Code
 
-In order to use the code in this repository make sure your machine satisfy  all requirements in the "Getting started"- paragraph above. Now you are free to clone this repository and use it on your own computer(!No GPU-support needed!). After cloning, you have to open a terminal and navigate to the folder representing the repository these folder should be placed in your python-environment. Please open a jupyter notebook using the *jupyter notebook* command. The Notebook will open in your browser. Thereafter you have to open the *Continuous_Control_Training.ipynd*-file and restart the kernel by clicking on the "restart"-button. A dialogue will open, please click on the "restart and run all cells"-button. Finally the agents train. if you like to whach them while training please change the ```r no_graphics = True``` If you prefer watching an already trained agent, please open the *Navigation_Trained_Agent_Test.ipynd*-file.
+In order to use the code in this repository make sure your machine satisfy  all requirements in the "Getting started"- paragraph above. Now you are free to clone this repository and use it on your own computer(!No GPU-support needed!). After cloning, you have to open a terminal and navigate to the folder representing the repository these folder should be placed in your python-environment. Please open a jupyter notebook using the *jupyter notebook* command. The Notebook will open in your browser. Thereafter you have to open the *Continuous_Control_Training.ipynd*-file and restart the kernel by clicking on the "restart"-button. A dialogue will open, please click on the "restart and run all cells"-button. Finally the agents train. If you like to whach them while training please change the ```no_graphics = True``` parameter to ```no_graphics = False```. If you prefer watching an already trained agent, please open the *Continuous_Control_Trained_Agent_Test.ipynd*-file.
 
 **For additional information please read the "Report.md"-file**
